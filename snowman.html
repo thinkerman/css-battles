@@ -1,0 +1,93 @@
+
+<div id="container">
+	<div id="cap"></div>
+	<div id="head"></div>
+	<div id="neck"></div>
+	<div id="stomach"></div>
+</div>
+<style>
+  #container {
+   transform:translateY(-10px);
+    //position:relative;
+  }
+  #cap {
+    height:45px;
+    width: 38px;
+    margin:0 auto 0px;
+    background-color: #0E1F2B;
+    position:relative;
+    transform:translateY(5px);
+    z-index:1
+  }
+  #cap:before{
+    content:' ';
+    height:10px;
+    width:100%;
+    position:absolute;
+    top:32%;
+    background-color:#ffffff;
+  }
+  #cap:after {
+    content:' ';
+    height:5px;
+    width:60px;
+    position:absolute;
+    bottom:0;
+    background-color:#0E1F2B;
+    left:-10px
+  }
+  #head {
+    width: 59px;
+    height: 55px;
+    background: #ffffff;
+    border-radius: 50%;
+    clip-path: inset(0 0 10px 0);
+    margin:0 auto -6px;
+    position:relative;
+  }
+  #head:before {
+    content:' ';
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    position:absolute;
+    background-color: #0E1F2B;
+    top: 32%;
+    left:14px;
+  }
+  #head:after {
+    content:' ';
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    position:absolute;
+    background-color: #0E1F2B;
+    top: 32%;
+    right:14px;
+  }
+  #neck {
+    height:10px;
+    width:55px;
+    background: #FFA63F;
+    border-radius:50px;
+    margin: 0 auto -6px;
+  }
+  #stomach {
+    width: 97px;
+    height: 97px;
+    background: #ffffff;
+    border-radius: 50%;
+    clip-path: inset(10px 0 0 0);
+    position:relative;
+    margin: 0 auto;
+  }
+  body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background: #AC474B;
+    height:100vh;
+    width:100vw;
+  }
+</style>
